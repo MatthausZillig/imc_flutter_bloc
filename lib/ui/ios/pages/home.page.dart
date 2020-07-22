@@ -46,7 +46,11 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.all(20),
             child: CupertinoButton.filled(
               child: Text("Calcular"),
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  bloc.calculate();
+                });
+              },
             ),
           )
         ],
